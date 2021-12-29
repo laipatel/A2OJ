@@ -13,7 +13,7 @@ typedef vector<vl> vvl;
 #define S second
 #define PB push_back
 #define MP make_pair
-#define REP(i,a,b) for (int i = a; i <= b; i++)
+#define REP(i,a,b) for (int i = a; i < b; i++)
 #define SQ(a) (a)*(a)
 
 double eps = 1e-9;
