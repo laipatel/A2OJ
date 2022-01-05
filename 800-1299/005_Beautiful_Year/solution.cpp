@@ -27,5 +27,21 @@ int main() {
 	ios_base::sync_with_stdio(false);
   cin.tie(NULL); 
 
+	string s;
+	//int ans;
+	cin >> s;
+	int ans = stoi(s);
+
+	if (s[0] != s[1] && s[0] != s[2] && s[0] != s[3] && s[1] != s[2] && s[1] != s[3] && s[2] != s[3]) { //if everything is distinct
+		ans++;
+		s = to_string(ans);
+	}
+
+	while (s[0] == s[1] || s[0] == s[2] || s[0] == s[3] || s[1] == s[2] || s[1] == s[3] || s[2] == s[3]) {
+		ans++;
+		s = to_string(ans);
+	}
+	cout << ans << "\n";
+
 	return 0;
 }
